@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/originals/15/54/22/155422cd259ea9134ed3ded44d0950b7.jpg");
+    
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #3a2877;
+    animation: slide-in 1.5s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+.products {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    background: #3e3e4f;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.zoomable {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.zoomable:active {
+    transform: scale(1.5);
+    z-index: 1000;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #5542a0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+#cart {
+    padding: 20px;
+    text-align: left or right;
+    border-radius: 10px;
+    margin: 30px;
+    width: 80%;
+}
+#card-items {
+    color: #3a2877;
+    background-color:rgb(113, 85, 140);
+    list-style: none;
+    padding: 0;
+}
+#card-items li {
+    margin: 10px 0;
+ 
+}
+#total-price {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+}
+img{
+    width: 90px;
+}
+ul button{
+float: right;
+padding: 5px;
+background-color:rgb(113, 85, 140);
+color:#3c2d47;
+border: 2px inset rgb(50, 44, 44);
+}
+ul li{
+     margin-bottom: 20px; 
+     }
+
+.product button{
+    background-color:#3c2d47;
+color:#7a5a91;
+border: 2px inset rgb(50, 44, 44);
+}
